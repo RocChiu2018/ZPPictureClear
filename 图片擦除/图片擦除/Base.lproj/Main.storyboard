@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2B" translatesAutoresizingMaskIntoConstraints="NO" id="DUd-QO-irs" userLabel="下面的Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2A" translatesAutoresizingMaskIntoConstraints="NO" id="ENd-QG-ekJ" userLabel="上面的Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ENd-QG-ekJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GsC-nN-4ci"/>
+                            <constraint firstItem="DUd-QO-irs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pkf-Xw-sf4"/>
+                            <constraint firstItem="DUd-QO-irs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vn6-Xm-IHm"/>
+                            <constraint firstItem="ENd-QG-ekJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g8L-26-8J6"/>
+                            <constraint firstItem="ENd-QG-ekJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mFx-ru-kj9"/>
+                            <constraint firstItem="DUd-QO-irs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="njG-0r-Mhn"/>
+                            <constraint firstItem="DUd-QO-irs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zDw-hr-Yqy"/>
+                            <constraint firstItem="ENd-QG-ekJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ze2-gv-XqU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboveImageView" destination="ENd-QG-ekJ" id="2Q2-bf-F7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2A" width="480" height="720"/>
+        <image name="2B" width="480" height="720"/>
+    </resources>
+</document>
